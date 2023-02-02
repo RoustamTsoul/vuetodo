@@ -85,12 +85,13 @@ h2{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px;
     padding-bottom: 20px;
     margin: 25px 0;
     border-bottom: 1px solid #bfbfbf;
 }
 
-h2 .mask-num{
+h2 .task-num{
     border-radius: 20px;
     border: 2px solid #2a2f36;
     color: #2a2f36;
@@ -120,6 +121,7 @@ h2 .mask-num{
   
 input[type="checkbox"] + span {
     padding-left: 10px;
+    margin: 20px;
 }
   
 .btn-remove {
@@ -130,7 +132,8 @@ input[type="checkbox"] + span {
     color: #fff;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 5px 10px;
+    padding:5px 10px;
+    margin:20px;
     font-size: 12px;
     outline: none;
     transition: 0.2s;
@@ -148,6 +151,7 @@ input[type="checkbox"]:not(:checked){
     opacity: 0;
     width: 20px;
     height: 20px;
+    margin: 20px;
     margin-top: 6px;
 }
 input[type="checkbox"]:checked + span,
