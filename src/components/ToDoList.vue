@@ -20,7 +20,7 @@
     <ul class="task-list complete-list">
         <li v-for="(task, index) in completeList" :key="task"> 
             <div>
-                <input type="checkbox" v-on:change="moveTaskBack"    checked>
+                <input type="checkbox" v-on:change="moveTaskBack(index)">
                 <span>{{task}}</span>
             </div>
             <button class="btn-remove" v-on:click="removeTaskFromCompleteList(index)">Remove</button>
@@ -63,7 +63,8 @@ export default {
 
         moveTaskBack(index){
             const task = this.completeList[index];
-            this.removeTaskFromCompleteList(index);
+            console.log(index)
+            this.removeTaskFromCompleteList(task);
             this.$emit('add-task', task);
         },
 

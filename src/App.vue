@@ -34,8 +34,9 @@ export default {
     },
 
     onRemoveTask(index){
-      this.needDoList.splice(index)
-    }
+      this.needDoList.splice(index, 1)
+    },
+
   }
   
 }

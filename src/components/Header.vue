@@ -25,8 +25,8 @@ export default {
             if(this.valueInput === ''){
                 return
             }
-        
-            this.$emit('task-add', this.valueInput)
+            
+            this.$emit('task-add',  this.valueInput )
 
             this.valueInput = '';
         }
